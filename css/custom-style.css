@@ -14,3 +14,47 @@
 .details-row {
     margin-bottom: 5px;
 }
+
+.card-img-row {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+a, a:hover, a:focus {
+    color: #009A49;
+    font-weight: bolder;
+}
+
+a:hover, a:focus {
+    font-weight: bold;
+}
+
+.btn-primary-green {
+    background-color: #009A49;
+    border: black;
+}
+
+.btn-primary-green:hover {
+    background-color: rgb(2, 136, 65);
+    border: black;
+}
+
+.btn-primary-green:active {
+    background-color: rgb(2, 136, 65);
+    border: black;
+}
+
+.btn-primary-green:visited {
+    background-color: rgb(2, 136, 65);
+    border: black;
+}
+
+.detail-card-mobile {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.detail-card {
+    width: 100%;
+    margin-top: 1rem;
+}

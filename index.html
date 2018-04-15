@@ -149,18 +149,145 @@
       </div>
     </section>
 
-    <section id="planit">
+    <section id="planit" class="bg-light">
       <div class="container">
         <div class="row text-center">
           <div class="col-lg-8 mx-auto">
             <h2>Plan It</h2>
-            <p class="lead">We'll put some details and recomendation here soon to help you plan your trip.</p>
           </div>
         </div>
+        <div class="row text-center">
+    
+          <div class="col-lg-4 col-md-10 col-sm-10" style="margin-top:2rem;">
+            <div class="card">
+              <div class="card-img-top">
+                <div class="row card-img-row">
+                    <img class="nest-card-img mx-auto img-fluid" src="img/icons/departures.png" alt="Card image cap">
+                </div>
+              </div>
+              <!-- Desktop View (Collabible section appears after/below other cards) -->
+              <div class="card-body d-none d-md-block">
+                <h4 class="card-title">Travel</h4>
+                <p class="card-text">If you need to fly, there are several direct flight options available. Travel within Europe is also very accessible and affordable.</p>
+                <button class="btn btn-primary btn-primary-green" type="button" data-toggle="collapse" data-target="#collapsibleTravelInfo" aria-expanded="false" aria-controls="collapsibleTravelInfo">View Travel Tips</button>
+              </div>
+              <!-- Mobile View (Collabible section appears before other cards) -->
+              <div class="card-body d-md-none">
+                <h4 class="card-title">Travel</h4>
+                <p class="card-text">If you need to fly, there are several direct flight options available. Travel within Europe is also very accessible and affordable.</p>
+                <button class="btn btn-primary btn-primary-green" type="button" data-toggle="collapse" data-target="#collapsibleTravelInfoMobile" aria-expanded="false" aria-controls="collapsibleTravelInfoMobile">View Travel Tips</button>
+                <div class="collapse" id="collapsibleTravelInfoMobile">
+                  <div class="card card-body detail-card-mobile">
+                      <h4 class="card-title">From the U.S.</h4>
+                      <p class="text-danger">Remember - you need a passport! Make sure yours is valid, and don't wait to <u><a class="text-danger" target="_blank" href="https://travel.state.gov/content/travel/en/passports/apply-renew-passport.html">renew</a></u>.</p>
+                      <p><b>From New England: </b><a target="_blank" href="https://www.aerlingus.com/plan-and-book/latest-offers/flights-from-usa/flights-from-usa-to-ireland/">Aer Lingus</a> is the least expensive airline to offer multiple daily direct flights from Logan Airport to Dublin. In some cases, you can get even better fares flying <a target="_blank" href="https://www.norwegian.com/us/booking/flight-tickets/farecalendar/?D_City=PVD&A_City=DUB&D_Day=01&D_Month=201808&R_Day=01&R_Month=201809&AgreementCodeFK=-1&CurrencyCode=USD">Norwegian Air</a> out of Providence.</p>
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.aerlingus.com/plan-and-book/latest-offers/flights-from-usa/flights-from-usa-to-ireland/"><img class="img-fluid" src="img/logos/aerlingus.png" style="float:left; margin-right:1rem;"></a></div>
+                        <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.norwegian.com/us/booking/flight-tickets/farecalendar/?D_City=PVD&A_City=DUB&D_Day=01&D_Month=201808&R_Day=01&R_Month=201809&AgreementCodeFK=-1&CurrencyCode=USD"><img class="img-fluid" src="img/logos/norwegian.png" style="float:left; margin-right:1rem; margin-bottom:1rem;"></a></div>
+                      </div>
+                      <p><b>From Philadelphia: </b><a target="_blank" href="https://www.aerlingus.com/plan-and-book/latest-offers/flights-from-usa/flights-from-usa-to-ireland/">Aer Lingus</a> is the least expensive airline flying direct from Philadelphia to Dublin, though there is only one daily option. <a target="_blank" href="https://www.finnair.com/us/gb/">Finnair</a> is a reasonably priced alternative.</p>
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.aerlingus.com/plan-and-book/latest-offers/flights-from-usa/flights-from-usa-to-ireland/"><img class="img-fluid" src="img/logos/aerlingus.png" style="float:left; margin-right:1rem;"></a></div>
+                        <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.finnair.com/us/gb/"><img class="img-fluid" src="img/logos/finnair.png" style="float:left; margin-right:1rem; margin-bottom:1rem;"></a></div>
+                      </div>
+                      <br>
+                      <h4 class="card-title">From Europe</h4>
+                      <p><b>Getting to Dublin: </b><a target="_blank" href="https://www.aerlingus.com/">Aer Lingus</a> and <a target="_blank" href="https://www.ryanair.com/">Ryanair</a> cover most destinations in Europe. Ryanair tends to be the cheapest.</p>
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.aerlingus.com/"><img class="img-fluid" src="img/logos/aerlingus.png" style="float:left; margin-right:1rem;"></a></div>
+                        <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.ryanair.com/"><img class="img-fluid" src="img/logos/ryanair.png" style="float:left; margin-right:1rem; margin-bottom:1rem;"></a></div>
+                      </div>
+                      <br>
+                      <h4 class="card-title">Getting Around Ireland</h4>
+                      <p><b>Car Rental: </b>The wedding venue, Tulfarris, is outside of the city, so you will likely want to rent a car if you are coming from abroad. You can <a target="_blank" href="https://www.dublinairport.com/to-from-the-airport/car-rental">rent a car at Dublin Airport</a>, which offers many of the same rental companies as those found in the U.S. (Avis, Budget, Enterprise, and Hertz) as well as several European companies. <br><span class="text-warning">Note that in Ireland, there are stricter drunk driving laws, and you drive on the left side of the road (opposite the U.S.).</span></p>
+                      <p><b>Taxis and Public Transit: </b>Uber and Lyft aren't as mainstream as in the U.S. <a target="_blank" href="https://ie.mytaxi.com/hailoisnowmytaxi">MyTaxi</a> is an option for hailing taxis from your phone. There is also <a target="_blank" href="https://www.transportforireland.ie/journey-planner/maps/">public transit</a> via busses, trains, and trolleys for travel in and arround Dublin.</p>
+                      <br>
+                      <h4 class="card-title">Getting Around Europe</h4>
+                      <p>Once across the Atlantic, it's very easy to get around Europe. We have gotten flights for as low as 20 Euro! <a target="_blank" href="https://www.aerlingus.com/">Aer Lingus</a> and <a target="_blank" href="https://www.ryanair.com/">Ryanair</a> cover most destinations in Europe. Ryanair tends to be the cheapest. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-10 col-sm-10" style="margin-top:2rem;">
+            <div class="card">
+              <div class="card-img-top">
+                <div class="row card-img-row">
+                    <img class="nest-card-img mx-auto img-fluid" src="img/icons/hotel.png" alt="Card image cap">
+                </div>
+              </div>
+              <div class="card-body">
+                  <h4 class="card-title">Accomodation</h4>
+                  <p class="card-text">Accomodation Details to Come Soon!</p>
+                  <button disabled class="btn btn-primary btn-primary-green" type="button" data-toggle="collapse" data-target="#collapsibleHotelInfo" aria-expanded="false" aria-controls="collapsibleHotelInfo">Book Accomodation</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-10 col-sm-10" style="margin-top:2rem;">
+            <div class="card">
+              <div class="card-img-top">
+                <div class="row card-img-row">
+                    <img class="nest-card-img mx-auto img-fluid" src="img/icons/brochure.png" alt="Card image cap">
+                </div>
+              </div>
+              <div class="card-body">
+                  <h4 class="card-title">Attractions</h4>
+                  <p class="card-text">Attractions info to come soon!</p>
+                  <button disabled class="btn btn-primary btn-primary-green" type="button" data-toggle="collapse" data-target="#collapsibleAttractionsInfo" aria-expanded="false" aria-controls="collapsibleAttractionsInfo">Explore the Area</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+          
+          <div class="collapse" id="collapsibleTravelInfo">
+            <div class="card card-body detail-card">
+              <h4 class="card-title">From the U.S.</h4>
+              <p class="text-danger">Remember - you need a passport! Make sure yours is valid, and don't wait to <u><a class="text-danger" target="_blank" href="https://travel.state.gov/content/travel/en/passports/apply-renew-passport.html">renew</a></u>.</p>
+              <p><b>From New England: </b><a target="_blank" href="https://www.aerlingus.com/plan-and-book/latest-offers/flights-from-usa/flights-from-usa-to-ireland/">Aer Lingus</a> is the least expensive airline to offer multiple daily direct flights from Logan Airport to Dublin. In some cases, you can get even better fares flying <a target="_blank" href="https://www.norwegian.com/us/booking/flight-tickets/farecalendar/?D_City=PVD&A_City=DUB&D_Day=01&D_Month=201808&R_Day=01&R_Month=201809&AgreementCodeFK=-1&CurrencyCode=USD">Norwegian Air</a> out of Providence.</p>
+              <div class="row">
+                <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.aerlingus.com/plan-and-book/latest-offers/flights-from-usa/flights-from-usa-to-ireland/"><img class="img-fluid" src="img/logos/aerlingus.png" style="float:left; margin-right:1rem;"></a></div>
+                <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.norwegian.com/us/booking/flight-tickets/farecalendar/?D_City=PVD&A_City=DUB&D_Day=01&D_Month=201808&R_Day=01&R_Month=201809&AgreementCodeFK=-1&CurrencyCode=USD"><img class="img-fluid" src="img/logos/norwegian.png" style="float:left; margin-right:1rem; margin-bottom:1rem;"></a></div>
+              </div>
+              <p><b>From Philadelphia: </b><a target="_blank" href="https://www.aerlingus.com/plan-and-book/latest-offers/flights-from-usa/flights-from-usa-to-ireland/">Aer Lingus</a> is the least expensive airline flying direct from Philadelphia to Dublin, though there is only one daily option. <a target="_blank" href="https://www.finnair.com/us/gb/">Finnair</a> is a reasonably priced alternative.</p>
+              <div class="row">
+                <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.aerlingus.com/plan-and-book/latest-offers/flights-from-usa/flights-from-usa-to-ireland/"><img class="img-fluid" src="img/logos/aerlingus.png" style="float:left; margin-right:1rem;"></a></div>
+                <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.finnair.com/us/gb/"><img class="img-fluid" src="img/logos/finnair.png" style="float:left; margin-right:1rem; margin-bottom:1rem;"></a></div>
+              </div>
+              <br>
+              <h4 class="card-title">From Europe</h4>
+              <p><b>Getting to Dublin: </b><a target="_blank" href="https://www.aerlingus.com/">Aer Lingus</a> and <a target="_blank" href="https://www.ryanair.com/">Ryanair</a> cover most destinations in Europe. Ryanair tends to be the cheapest.</p>
+              <div class="row">
+                <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.aerlingus.com/"><img class="img-fluid" src="img/logos/aerlingus.png" style="float:left; margin-right:1rem;"></a></div>
+                <div class="col-lg-3 col-sm-4"><a target="_blank" href="https://www.ryanair.com/"><img class="img-fluid" src="img/logos/ryanair.png" style="float:left; margin-right:1rem; margin-bottom:1rem;"></a></div>
+              </div>
+              <br>
+              <h4 class="card-title">Getting Around Ireland</h4>
+              <p><b>Car Rental: </b>The wedding venue, Tulfarris, is outside of the city, so you will likely want to rent a car if you are coming from abroad. You can <a target="_blank" href="https://www.dublinairport.com/to-from-the-airport/car-rental">rent a car at Dublin Airport</a>, which offers many of the same rental companies as those found in the U.S. (Avis, Budget, Enterprise, and Hertz) as well as several European companies. <br><span class="text-warning">Note that in Ireland, there are stricter drunk driving laws, and you drive on the left side of the road (opposite the U.S.).</span></p>
+              <p><b>Taxis and Public Transit: </b>Uber and Lyft aren't as mainstream as in the U.S. <a target="_blank" href="https://ie.mytaxi.com/hailoisnowmytaxi">MyTaxi</a> is an option for hailing taxis from your phone. There is also <a target="_blank" href="https://www.transportforireland.ie/journey-planner/maps/">public transit</a> via busses, trains, and trolleys for travel in and arround Dublin.</p>
+              <br>
+              <h4 class="card-title">Getting Around Europe</h4>
+              <p>Once across the Atlantic, it's very easy to get around Europe. We have gotten flights for as low as 20 Euro! <a target="_blank" href="https://www.aerlingus.com/">Aer Lingus</a> and <a target="_blank" href="https://www.ryanair.com/">Ryanair</a> cover most destinations in Europe. Ryanair tends to be the cheapest. </p>
+            </div>
+          </div>
+          
+          <div class="collapse" id="collapsibleHotelInfo">
+            <div class="card card-body">
+              Hotel - Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+
+          <div class="collapse" id="collapsibleAttractionsInfo">
+            <div class="card card-body">
+              Attractions - Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
       </div>
     </section>
 
-    <section id="rsvp" class="bg-light">
+    <section id="rsvp">
       <div class="container">
         <div class="row text-center">
           <div class="col-lg-8 mx-auto">
