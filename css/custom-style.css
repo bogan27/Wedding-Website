@@ -58,3 +58,7 @@ a:hover, a:focus {
     width: 100%;
     margin-top: 1rem;
 }
+
+.tab-content {
+    margin-top: 1rem;
+}
