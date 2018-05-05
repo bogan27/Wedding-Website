@@ -52,6 +52,7 @@
       </div>
     </nav>
 
+    <!-- Desktop Image Carousel -->
     <div id="carouselHeader" class="carousel slide text-center d-none d-md-block" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselHeader" data-slide-to="0" class="active"></li>
@@ -83,6 +84,7 @@
       </a>
     </div>
 
+    <!-- Mobile Image Carousel -->
     <div id="carouselHeaderMobile" class="carousel slide text-center d-md-none" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselHeaderMobile" data-slide-to="0" class="active"></li>
@@ -114,6 +116,7 @@
       </a>
     </div>
 
+    <!-- Wedding Info / About Section -->
     <section id="about">
       <div class="container">
         <div class="row">
@@ -149,6 +152,7 @@
       </div>
     </section>
 
+    <!-- RSVP Section -->
     <section id="rsvp">
       <div class="container">
         <div class="row text-center">
@@ -178,6 +182,7 @@
         </div>
         <div class="row text-center">
     
+          <!-- Travel Card -->
           <div class="col-lg-4 col-md-10 col-sm-10" style="margin-top:2rem;">
             <div class="card">
               <div class="card-img-top">
@@ -259,6 +264,7 @@
             </div>
           </div>
 
+          <!-- Accomodation Card -->
           <div class="col-lg-4 col-md-10 col-sm-10" style="margin-top:2rem;">
             <div class="card">
               <div class="card-img-top">
@@ -266,32 +272,112 @@
                     <img class="nest-card-img mx-auto img-fluid" src="img/icons/hotel.png" alt="Card image cap">
                 </div>
               </div>
-              <div class="card-body">
-                  <h4 class="card-title">Accomodation</h4>
-                  <p class="card-text">Accomodation Details to Come Soon!</p>
-                  <button disabled class="btn btn-primary btn-primary-green" type="button" data-toggle="collapse" data-target="#collapsibleHotelInfo" aria-expanded="false" aria-controls="collapsibleHotelInfo">Book Accomodation</button>
+              <!-- Desktop View (Collabible section appears after/below other cards) -->
+              <div class="card-body d-none d-md-block">
+                <h4 class="card-title">Accomodation</h4>
+                <p class="card-text">We recommend staying over, since the wedding venue isn't in the city. Here are the details for booking your stay for the wedding and your travels in Ireland.</p>
+                <button class="btn btn-primary btn-primary-green" type="button" data-toggle="collapse" data-target="#collapsibleHotelInfo" aria-expanded="false" aria-controls="collapsibleHotelInfo">Booking Accomodation</button>
+                <!-- Content displayed in this card on desktops appears under the row of card, so is located farther down the page -->
+              </div>
+
+              <!-- Mobile View (Collabible section appears before other cards) -->
+              <div class="card-body d-md-none">
+                <h4 class="card-title">Accomodation</h4>
+                <p class="card-text">We recommend staying over, since the wedding venue isn't in the city. Here are the details for booking your stay for the wedding and your travels in Ireland.</p>
+                <button class="btn btn-primary btn-primary-green" type="button" data-toggle="collapse" data-target="#collapsibleHotelInfoMobile" aria-expanded="false" aria-controls="collapsibleHotelInfoMobile">Booking Accomodation</button>
+                <div class="collapse" id="collapsibleHotelInfoMobile">
+                  <div class="card card-body detail-card-mobile">
+
+                    <ul class="nav nav-tabs" id="accomodationTabs" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="accomodationTab1Mobile" data-toggle="tab" href="#bookingTulfarris" role="tab" aria-controls="bookingTulfarris" aria-selected="true">Staying at Tulfarris</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="accomodationTab2Mobile" data-toggle="tab" href="#bookingOther" role="tab" aria-controls="bookingOther" aria-selected="false">Other Places Near Dublin</a>
+                      </li>
+                    </ul>
+
+                    <div class="tab-content" id="accomodationTabsContent">
+
+                      <div class="tab-pane tab-content fade show active" id="bookingTulfarris" role="tabpanel" aria-labelledby="accomodationTab1Mobile">
+                          <h4 class="card-title">Booking Your Stay At Tulfarris</h4>
+                          <p class="text-danger">Do Not Book Online - In order for Tulfarris to associate you with our wedding, you need to call or email to book.</p>
+                          <p><b>By Phone (Recommended for guests living in Ireland): </b><a href="tel:+35345867600">+353 45 867600</a></p>
+                          <p><b>By Email (Recommended for guests living abroad): </b><a href="mailto:reservations@tulfarris.com">reservations@tulfarris.com</a></p>
+                      </div>
+
+                      <div class="tab-pane tab-content fade" id="bookingOther" role="tabpanel" aria-labelledby="accomodationTab2Mobile">
+                        <h4 class="card-title">Booking Your Stay During Your Time In Ireland</h4>
+                        <p><b>By Phone (Recommended for guests living in Ireland): </b><a href="tel:+35345867600">+353 45 867600</a></p>
+                        <p><b>By Email (Recommended for guests living abroad): </b><a href="mailto:reservations@tulfarris.com">reservations@tulfarris.com</a></p>
+                    </div>
+
+                  </div>
                 </div>
+              </div>
+
+              </div>
             </div>
           </div>
 
+          <!-- Attractions Card -->
           <div class="col-lg-4 col-md-10 col-sm-10" style="margin-top:2rem;">
             <div class="card">
               <div class="card-img-top">
                 <div class="row card-img-row">
-                    <img class="nest-card-img mx-auto img-fluid" src="img/icons/brochure.png" alt="Card image cap">
+                    <img class="nest-card-img mx-auto img-fluid" src="img/icons/brochure.png" alt="Attractions Near Dublin">
                 </div>
               </div>
-              <div class="card-body">
-                  <h4 class="card-title">Attractions</h4>
-                  <p class="card-text">Attractions info to come soon!</p>
-                  <button disabled class="btn btn-primary btn-primary-green" type="button" data-toggle="collapse" data-target="#collapsibleAttractionsInfo" aria-expanded="false" aria-controls="collapsibleAttractionsInfo">Explore the Area</button>
+              <!-- Desktop View (Collabible section appears after/below other cards) -->
+              <div class="card-body d-none d-md-block">
+                <h4 class="card-title">Attractions</h4>
+                <p class="card-text">If coming from abroad, we've pulled together a list of some of the top attractions in the Dublin area for you to check out.</p>
+                <button class="btn btn-primary btn-primary-green" type="button" data-toggle="collapse" data-target="#collapsibleHotelInfo" aria-expanded="false" aria-controls="collapsibleHotelInfo">View Local Attractions</button>
+                <!-- Content displayed in this card on desktops appears under the row of card, so is located farther down the page -->
+              </div>
+
+              <!-- Mobile View (Collabible section appears before other cards) -->
+              <div class="card-body d-md-none">
+                <h4 class="card-title">Attractions</h4>
+                <p class="card-text">If coming from abroad, we've pulled together a list of some of the top attractions in the Dublin area for you to check out.</p>
+                <button class="btn btn-primary btn-primary-green" type="button" data-toggle="collapse" data-target="#collapsibleHotelInfoMobile" aria-expanded="false" aria-controls="collapsibleHotelInfoMobile">View Local Attractions</button>
+                <div class="collapse" id="collapsibleHotelInfoMobile">
+                  <div class="card card-body detail-card-mobile">
+
+                    <ul class="nav nav-tabs" id="attractionsTabsMobile" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="attractionsTabsMobile1" data-toggle="tab" href="#wicklowAttractionsMobile" role="tab" aria-controls="wicklowAttractionsMobile" aria-selected="true">Wicklow Attractions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="attractionsTabsMobile2" data-toggle="tab" href="#dublinAttractionsMobile" role="tab" aria-controls="dublinAttractionsMobile" aria-selected="false">Dublin Attractions</a>
+                      </li>
+                    </ul>
+
+                    <div class="tab-content" id="accomodationTabsContent">
+
+                      <div class="tab-pane tab-content fade show active" id="wicklowAttractionsMobile" role="tabpanel" aria-labelledby="attractionsTabsMobile1">
+                          <h4 class="card-title">Booking Your Stay At Tulfarris</h4>
+                          <p class="text-danger">Do Not Book Online - In order for Tulfarris to associate you with our wedding, you need to call or email to book.</p>
+                          <p><b>By Phone (Recommended for guests living in Ireland): </b><a href="tel:+35345867600">+353 45 867600</a></p>
+                          <p><b>By Email (Recommended for guests living abroad): </b><a href="mailto:reservations@tulfarris.com">reservations@tulfarris.com</a></p>
+                      </div>
+
+                      <div class="tab-pane tab-content fade show active" id="dublinAttractionsMobile" role="tabpanel" aria-labelledby="attractionsTabsMobile2">
+                        <h4 class="card-title">Booking Your Stay During Your Time In Ireland</h4>
+                        <p><b>By Phone (Recommended for guests living in Ireland): </b><a href="tel:+35345867600">+353 45 867600</a></p>
+                        <p><b>By Email (Recommended for guests living abroad): </b><a href="mailto:reservations@tulfarris.com">reservations@tulfarris.com</a></p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              
               </div>
             </div>
           </div>
-
-        </div>
           
-          <div class="collapse" id="collapsibleTravelInfo">
+          <!-- Desktop Travel Details -->
+          <div class="collapse" id="collapsibleTravelInfo" style="min-width: 100%">
             <div class="card card-body detail-card">
 
               <ul class="nav nav-tabs" id="travelTabs" role="tablist">
@@ -350,13 +436,39 @@
             </div>
           </div>
           
-          <div class="collapse" id="collapsibleHotelInfo">
-            <div class="card card-body">
-              Hotel - Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
+          <!-- Desktop Accomodations/Hotel Details -->
+          <div class="collapse" id="collapsibleHotelInfo" style="min-width: 100%">
+                  <div class="card card-body detail-card-mobile">
+
+                    <ul class="nav nav-tabs" id="accomodationTabs" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="accomodationTab1Desktop" data-toggle="tab" href="#bookingTulfarrisDesktop" role="tab" aria-controls="bookingTulfarrisDesktop" aria-selected="true">Staying at Tulfarris</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="accomodationTab2Desktop" data-toggle="tab" href="#bookingOtherDesktop" role="tab" aria-controls="bookingOtherDesktop" aria-selected="false">Other Places Near Dublin</a>
+                      </li>
+                    </ul>
+
+                    <div class="tab-content" id="accomodationTabsContent">
+
+                      <div class="tab-pane tab-content fade show active" id="bookingTulfarrisDesktop" role="tabpanel" aria-labelledby="accomodationTab1Desktop">
+                          <h4 class="card-title">Booking Your Stay At Tulfarris</h4>
+                          <p class="text-danger">Do Not Book Online - In order for Tulfarris to associate you with our wedding, you need to call or email to book.</p>
+                          <p><b>By Phone (Recommended for guests living in Ireland): </b><a href="tel:+35345867600">+353 45 867600</a></p>
+                          <p><b>By Email (Recommended for guests living abroad): </b><a href="mailto:reservations@tulfarris.com">reservations@tulfarris.com</a></p>
+                      </div>
+
+                      <div class="tab-pane tab-content fade" id="bookingOtherDesktop" role="tabpanel" aria-labelledby="accomodationTab2Desktop">
+                        <h4 class="card-title">Booking Your Stay During Your Time In Ireland</h4>
+                        <p><b>By Phone (Recommended for guests living in Ireland): </b><a href="tel:+35345867600">+353 45 867600</a></p>
+                        <p><b>By Email (Recommended for guests living abroad): </b><a href="mailto:reservations@tulfarris.com">reservations@tulfarris.com</a></p>
+                    </div>
+
+                  </div>
           </div>
 
-          <div class="collapse" id="collapsibleAttractionsInfo">
+          <!-- Desktop Attractions Details -->
+          <div class="collapse" id="collapsibleAttractionsInfo" style="min-width: 100%">
             <div class="card card-body">
               Attractions - Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
             </div>
